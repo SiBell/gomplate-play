@@ -1,0 +1,11 @@
+extraStaffGroups:
+  - groupPath: /_ADMIN_APPS/redpanda
+    nameOverride: admin-apps-redpanda
+    usernames:
+      - john.doe@example.com
+      - jane.smith@example.com
+    realmRoles:
+      - app.redpanda
+
+runOnSchedule:
+  id: ae5b2533-a1c8-47d5-8462-bb93c2ad0377

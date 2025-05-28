@@ -1,0 +1,35 @@
+clients:
+  - type: api
+    name: organization
+    settings:
+      domain: campbell-cloud.com
+      description: Client for api.organization
+      globalSubdomain: us-west-2
+      subdomains:
+        - us-west-2
+
+emailService:
+  button:
+    ref: "https://us-west-2.campbell-cloud.com/apps/stations-and-networks"
+
+staffGroups:
+
+  - groupPath: /campbell_cloud/Admin
+    usernames:
+      - rleverette@campbellsci.com
+    realmRoles:
+      - app.argocd
+    realmManagementRoles:
+      - realm-admin
+
+  - groupPath: /_ADMIN_APPS/redpanda
+    nameOverride: admin-apps-redpanda
+    realmRoles:
+      - app.redpanda
+    usernames:
+      - john.doe@example.com
+      - jane.smith@example.com
+
+
+
+# Deal with yaml that already has double curly braces

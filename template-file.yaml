@@ -1,0 +1,26 @@
+clients:
+  - type: api
+    name: organization
+    settings:
+      domain: {{ (datasource "global").domain }}
+      description: Client for api.organization
+      globalSubdomain: {{ (datasource "global").region }}
+      subdomains:
+        - {{ (datasource "global").region }}
+
+emailService:
+  button:
+    ref: "https://{{(datasource "global").region}}.{{(datasource "global").domain}}/apps/stations-and-networks"
+
+staffGroups:
+
+  - groupPath: /campbell_cloud/Admin
+    usernames:
+      - rleverette@campbellsci.com
+    realmRoles:
+      - app.argocd
+    realmManagementRoles:
+      - realm-admin
+
+{{ (datasource "local").extraStaffGroups | data.ToYAML | strings.Indent 2 }}
+
