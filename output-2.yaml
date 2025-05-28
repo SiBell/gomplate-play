@@ -5,6 +5,7 @@ components:
   - name: run-on-schedule
     id: ae5b2533-a1c8-47d5-8462-bb93c2ad0377
     version: 6
+    ref: run-on-schedule-ultra
     metadata: |-
       {
         "$profile": "stock",

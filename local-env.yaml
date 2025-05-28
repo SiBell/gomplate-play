@@ -9,3 +9,4 @@ extraStaffGroups:
 
 runOnSchedule:
   id: ae5b2533-a1c8-47d5-8462-bb93c2ad0377
+  refSuffix: ultra 

@@ -5,6 +5,7 @@ components:
   - name: run-on-schedule
     id: << (datasource "local").runOnSchedule.id >>
     version: 6
+    ref: run-on-schedule-<< (datasource "local").runOnSchedule.refSuffix >>
     metadata: |-
       {
         "$profile": "stock",
