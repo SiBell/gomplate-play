@@ -31,5 +31,3 @@ staffGroups:
       - jane.smith@example.com
 
 
-
-# Deal with yaml that already has double curly braces
