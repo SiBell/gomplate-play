@@ -21,7 +21,7 @@ gomplate -f ./template-file.yaml -d global=./global-env.yaml -d local=./local-en
 Here's another example where we set custom delimiters:
 
 ```bash
-gomplate --left-delim '{{{{' --right-delim '}}}}' -f ./template-file-2.yaml -d global=./global-env.yaml -d local=./local-env.yaml -o ./output-2.yaml
+gomplate --left-delim '<<' --right-delim '>>' -f ./template-file-2.yaml -d global=./global-env.yaml -d local=./local-env.yaml -o ./output-2.yaml
 ```
 
 ## Links

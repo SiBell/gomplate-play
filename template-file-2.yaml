@@ -1,5 +1,5 @@
 # Crucially this template file contains code that is already using double and triple curly braces which should not be interpreted by gomplate.
-# Thus we'll need to specifically set gomplate's left and right delimiters to something else, in this case {{{{ and }}}}.
+# Thus we'll need to specifically set gomplate's left and right delimiters to something else.
 
 components:
   - name: run-on-schedule
