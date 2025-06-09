@@ -22,5 +22,6 @@ staffGroups:
     realmManagementRoles:
       - realm-admin
 
+{{- if has (datasource "local") "extraStaffGroups" }}
 {{ (datasource "local").extraStaffGroups | data.ToYAML | strings.Indent 2 }}
-
+{{- end }}

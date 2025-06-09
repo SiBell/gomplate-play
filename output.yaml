@@ -21,7 +21,6 @@ staffGroups:
       - app.argocd
     realmManagementRoles:
       - realm-admin
-
   - groupPath: /_ADMIN_APPS/redpanda
     nameOverride: admin-apps-redpanda
     realmRoles:
@@ -29,5 +28,4 @@ staffGroups:
     usernames:
       - john.doe@example.com
       - jane.smith@example.com
-
 
